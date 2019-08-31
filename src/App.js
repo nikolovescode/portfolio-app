@@ -6,27 +6,27 @@ import {Link} from 'react-router-dom';
 class App extends Component {
   render(){
   return (
-    <div style={{height: '300px', position: 'relative', margin: 'auto'}}>
-    <Layout fixedHeader fixedDrawer>
-        <Header title="Nikolaj Månssons Portfolio">
-            <Textfield
-                value=""
-                onChange={() => {}}
-                label="Search"
-                expandable
-                expandableIcon="search"
-            />
+    <div className="demo-big-content">
+    <Layout>
+        <Header className="header-color" title="Nikolaj Månsson Portfolio" scroll>
+            <Navigation>
+            <Link to="/resume">Resume</Link>
+                <Link to="/aboutme">About Me</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/contact">Contact</Link>
+            </Navigation>
         </Header>
         <Drawer title="Menu">
             <Navigation>
-                <Link to="/resume">Resume</Link>
+            <Link to="/resume">Resume</Link>
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
         <Content>
-          <Main />
+            <div className="page-content" />
+            <Main />
         </Content>
     </Layout>
 </div>
