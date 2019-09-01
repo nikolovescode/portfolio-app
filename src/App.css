@@ -58,3 +58,7 @@ background: linear-gradient(to right, #EDDE5D, #F09819); /* W3C, IE 10+/ Edge, F
   font-size: 5em;
   padding: 8px;
 }
+
+.projects-grid {
+  display: flex;
+}
